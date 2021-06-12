@@ -34,7 +34,8 @@ pip install -r requirements.txt
 3. Source setup.bash
 ```bash
 cd ros
-catkin_make source devel/setup.sh
+catkin_make 
+source devel/setup.sh
 ```
 4. Launch the project
 ```bash
