@@ -1,5 +1,5 @@
 
-This project implements the core functionality to autonomously drive a vehcile around a track. It also includes traffic light detection, control and waypoint following. The code is tested against a simulator that mimics functionality on Carla, Udacity's self driving car!
+This project implements the core functionality to autonomously drive a vehicle around a track. It also includes traffic light detection, control and waypoint following. The code is tested against a simulator that mimics functionality on Carla, Udacity's self driving car!
 
 ### System Architecture
 
