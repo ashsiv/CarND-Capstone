@@ -13,11 +13,11 @@ The traffic light detection node takes in data from topics such as **/image_colo
 
 ![image2](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/tl-detector-ros-graph.png)
 
-The waypoint updater node will update the target velocity property of each waypoint based onthe traffic light and obstacle detection. This node will subscribe to the **/base_waypoints** , **/current_pose** , **/obstacle_waypoint** , and **/traffic_waypoint** topics, and publish a list of waypoints ahead of the car with target velocities to the **/final_waypoints** topic.
+The waypoint updater node will update the target velocity property of each waypoint based on the traffic light and obstacle detection. This node will subscribe to the **/base_waypoints** , **/current_pose** , **/obstacle_waypoint** , and **/traffic_waypoint** topics, and publish a list of waypoints ahead of the car with target velocities to the **/final_waypoints** topic.
 
 ![image3](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/waypoint-updater-ros-graph.png)
 
-Finally we have a drive-by-wire (dbw) system to control. A DBW system has electronic control for throttle, brake, and steering.  The dbw_node subscribes to the **/current_velocity** topic along with the **/twist_cmd** topic to receive target linear and angular velocities. Additionally, this node will subscribe to **/vehicle/dbw_enabled**, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the **/vehicle/throttle_cmd**, **/vehicle/brake_cmd**, and **/vehicle/steering_cmd** topics.
+Finally we have a drive-by-wire (dbw) system to control. A DBW system has electronic control for throttle, brake, and steering.  The dbw_node subscribes to the **/current_velocity** topic along with the **/twist_cmd** topic to receive target linear and angular velocities. Additionally, this node will subscribe to **/vehicle/dbw_enabled**, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the **/vehicle/throttle_cmd**, **/vehicle/brake_cmd**, and **/vehicle/steering_cmd** topics to control the vehicle.
 
 ![image4](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/dbw-node-ros-graph.png)
 
