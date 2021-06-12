@@ -40,4 +40,6 @@ catkin_make source devel/setup.sh
 ```bash
 roslaunch launch/styx.launch
 ```
-
+### Results
+The test drive video for the code repo shows the simulation vehicle autonomously drive around a track at a set speed of 18.6 mph (30 km/h) slowing down and coming to a complete stop at red lights.
+* [Test drive.mp4](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/Autonomous%20driving%20-%20Capstone%20Project_6_12_21.mp4) 
