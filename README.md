@@ -17,7 +17,7 @@ The waypoint updater node will update the target velocity property of each waypo
 
 ![image3](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/waypoint-updater-ros-graph.png)
 
-Finally we have a drive-by-wire (dbw) system to control. A DBW system has electronic control for throttle, brake, and steering.  The dbw_node subscribes to the **/current_velocity** topic along with the **/twist_cmd** topic to receive target linear and angular velocities. Additionally, this node will subscribe to **/vehicle/dbw_enabled**, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the **/vehicle/throttle_cmd**, **/vehicle/brake_cmd**, and **/vehicle/steering_cmd** topics to control the vehicle.
+Finally we have a drive-by-wire (dbw) system to control. A DBW system has electronic control for throttle, brake, and steering.  The dbw_node subscribes to the **/current_velocity** topic along with the **/twist_cmd** topic to receive target linear and angular velocities. Additionally, this node will subscribe to **/vehicle/dbw_enabled**, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the **/vehicle/throttle_cmd**, **/vehicle/brake_cmd**, and **/vehicle/steering_cmd** topics to control the vehicle at 50 Hz.
 
 ![image4](https://github.com/ashsiv/CarND-Capstone/blob/master/imgs/dbw-node-ros-graph.png)
 
@@ -34,7 +34,8 @@ pip install -r requirements.txt
 3. Source setup.bash
 ```bash
 cd ros
-catkin_make source devel/setup.sh
+catkin_make 
+source devel/setup.sh
 ```
 4. Launch the project
 ```bash
